@@ -1,6 +1,6 @@
 package Units;
 
-public class PairOfKnodes {
+public class PairOfKnodes extends Unit{
 	private Server[] pair = new Server[2];
 	
 	public PairOfKnodes (Server kNode1, Server kNode2) {

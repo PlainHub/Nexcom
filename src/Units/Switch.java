@@ -1,6 +1,6 @@
 package Units;
 
-public class Switch {
+public class Switch extends Unit {
 	private int serialNumber;
 	private int numOfPorts;
 	

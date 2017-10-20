@@ -1,6 +1,6 @@
 package Units;
 
-public class JBOD {
+public class JBOD extends Unit{
 	
 	private int serialNumber;
 	private String fRUType;

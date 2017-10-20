@@ -1,6 +1,6 @@
 package Units;
 
-public class Server {
+public class Server extends Unit{
 	
 	private int serialNumber;
 	private int kCSNumber;

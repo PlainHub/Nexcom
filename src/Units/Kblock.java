@@ -1,6 +1,6 @@
 package Units;
 
-public class Kblock {
+public class Kblock extends Unit{
 	private PairOfKnodes[] PON;
 	private JBOD[] shelf;
 	private PairofSwitch POS;

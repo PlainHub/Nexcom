@@ -1,6 +1,6 @@
 package Units;
 
-public class Accessory {
+public class Accessory extends Unit{
 	private String partNumber;
 	private String partName;
 	private String serialNumber;
