@@ -1,21 +1,25 @@
 package Units;
 
+/* Use Case:
+ 	- Load the most recent added KCS number from the KCS number history as the current KCS number.
+*/
+
 public class Server extends Unit{
 	
-	private int serialNumber;
-	private int kCSNumber;
-	private String fRUType;
-	private int knodeNumber;
-	private int[] kCSNumberHistory;
+	private int KCSNum;
+	private String FRUType;
+	private int K_NodeNum;
+	private int[] KCSNumHistory;
 	
-	// Construct a server with only serial number.
-	Server (int serialNumber){
-		this.serialNumber = serialNumber;
+	//	Newly manufactured server instance.
+	Server (String SerialNum){
+		super.SN = SerialNum;
 	}
 	
-	// Construct a server with serial number and KCS number
-	Server (int serialNumber, int kCSNumber){
-		this.serialNumber = serialNumber;
-		this.kCSNumber = kCSNumber;
+	// RMA server instance
+	Server (String SerialNum, int KCSNum, int K_NodeNum){
+		super.SN = SerialNum;
+		this.KCSNum = KCSNum;
+		this.K_NodeNum = K_NodeNum;
 	}
 }

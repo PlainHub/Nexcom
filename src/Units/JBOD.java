@@ -1,19 +1,23 @@
 package Units;
 
+/* Use Case:
+	- Load the most recent added KCS number from the KCS number history as the current KCS number.
+*/
+
 public class JBOD extends Unit{
 	
-	private int serialNumber;
 	private String fRUType;
 	private int kCSNumber;
 	private int[] kCSNumberHistory;
 	
-	// Construct a JBOD with only serial number.
-	public JBOD(int serialNumber) {
-		this.serialNumber = serialNumber;
+	// New manufactured JBOD
+	public JBOD(String SerialNum) {
+		super.SN = SerialNum;
 	}
 	
 	// Construct a JBOD with serial number and KCS number.
-	public JBOD(int serialNumber, int kCSNumber) {
+	public JBOD(String SerialNum, int kCSNumber) {
+		super.SN = SerialNum;
 		this.kCSNumber = kCSNumber;
 	}
 	

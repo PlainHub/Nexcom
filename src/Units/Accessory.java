@@ -1,21 +1,18 @@
 package Units;
 
 public class Accessory extends Unit{
-	private String partNumber;
-	private String partName;
-	private String serialNumber;
-	private Accessory[] componentList;
+	private Accessory[] compList;
 	
-	public Accessory(String partNumber, String partName, String serialNumber) {
-		this.partNumber = partNumber;
-		this.partName = partName;
-		this.serialNumber = serialNumber;
+	public Accessory(String PartNum, String PartName, String serialNum) {
+		super.PN = PartNum;
+		super.Des = PartName;
+		super.SN = serialNum;
 	}
 
-	public Accessory(String partNumber, String partName, String serialNumber, Accessory[] componentList) {
-		this.partNumber = partNumber;
-		this.partName = partName;
-		this.serialNumber = serialNumber;
-		this.componentList = componentList;
+	public Accessory(String PartNum, String PartName, String serialNum, Accessory[] compList) {
+		super.PN = PartNum;
+		super.Des = PartName;
+		super.SN = serialNum;
+		this.compList = compList;
 	}
 }
