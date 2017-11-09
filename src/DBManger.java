@@ -1,11 +1,21 @@
 
-import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Iterator;
+
 import javax.sql.DataSource;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
@@ -51,8 +61,30 @@ public class DBManger {
 	}
 	
 	// Use Case: determine a specific part by given Part Number
-	public static void PartNumberSearching(String pn) {
-
+	public static void FindPartNumber(String pn) throws IOException {
+		
+		InputStream ExcelFileLoader = new FileInputStream("C:\\Users\\nbc\\Desktop\\Test Part Number Content.xlsx");
+		XSSFWorkbook PNContentTable = new XSSFWorkbook(ExcelFileLoader);
+		XXFReder ra
+		Iterator<Sheet> row = PNContentTable.sheetIterator();
+		
+		while (row.hasNext()) {
+			XSSFRow cRow = (XSSFRow) row.next();
+		
+			Iterator<Cell> cell = cRow.cellIterator();
+			
+			while (cell.hasNext()) {
+				
+				XSSFCell cCell= (XSSFCell) cell.next();
+				
+				if (cCell.getStringCellValue().equals(pn) == true) {
+					System.out.println("your ");
+				}
+				
+				
+			}
+			
+		}
 		
 	}
 }

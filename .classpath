@@ -11,5 +11,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/poi-3.17/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nbc/Desktop/Jason/Eclipse Project/Shipping-Management/lib/mysql-connector-java-5.0.8/mysql-connector-java-5.0.8-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
